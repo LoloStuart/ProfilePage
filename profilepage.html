@@ -1,0 +1,108 @@
+<!-- Pardon the mess. Special thanks for Joe Lemay for helping me with the "connection requests" section  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding webfont instructions at https://fonts.google.com/specimen/Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>User Card</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+
+    <nav>
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out</button>
+    </nav>
+
+    <!-- Profile and education  -->
+    <div class="container flex">
+        <section class="left">
+            <div class="card border">
+                <div class="bar">
+                    <img src="images/user-circle.png" alt="profile photo">
+                </div>
+                <div class="profile">
+                    <h1>Jane Doe</h1>
+                        <p class="location">
+                            <img src="images/map-marker.png" alt="map marker icon">Seattle
+                        </p>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet!</p>
+                        <p class="settings">
+                            <img src="images/gear.png" alt="gear icon"><a href="#">edit profile</a>
+                        </p>
+                </div>
+            </div>
+            <div class="education-card border">
+                <div class="bar2">
+                    <h2>Education</h2>
+                </div>
+                <div class="card-padding">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="gray">December 2019 - March 2020</p>
+                    <p>Triple black belt in Python, MERN and C#</p>
+                </div>
+            </div>
+        </section>
+
+         <!-- Connection requests and your connections  -->
+         <aside class="right">
+            <div class="connection-requests border">
+                <div class="bar2">
+                    <h2>2 Connection Requests</h2>
+                </div>
+                <div class="row flex space-between"> 
+                    <div class="row-left flex align-items">
+                        <img src="images/user-circle.png" alt="profile photo" class="small-img">
+                        <p>Todd E.</p>
+                    </div>
+                    <div class="row-right">
+                        <img src="images/accept-circle.png" alt="profile photo"  class="small-img">
+                        <img src="images/close-circle.png" alt="profile photo"  class="small-img">
+                    </div>                        
+                </div>
+                <div class="row flex space-between"> 
+                    <div class="row-left flex align-items">
+                        <img src="images/user-circle.png" alt="profile photo"  class="small-img">
+                        <p>Phil K.</p>
+                    </div>
+                    <div class="row-right">
+                        <img src="images/accept-circle.png" alt="profile photo"  class="small-img">
+                        <img src="images/close-circle.png" alt="profile photo"  class="small-img">
+                    </div>                        
+                </div>
+            </div>
+            <div class="border">
+                <div class="bar2">
+                    <h2>(500+) Your Connections</h2>
+                </div>
+                <p class="flex align-items">
+                    <img src="images/user-circle.png" alt="profile photo"  class="small-img">Adrien D.
+                </p>   
+                <p class="flex align-items">
+                    <img src="images/user-circle.png" alt="profile photo"  class="small-img">Anne J.
+                </p> 
+                <p class="flex align-items">
+                    <img src="images/user-circle.png" alt="profile photo"  class="small-img">Alayne T.
+                </p> 
+                <p class="flex align-items">
+                    <img src="images/user-circle.png" alt="profile photo"  class="small-img">Arry Y.
+                </p>  
+                <p><a href="#">View more</a></p>
+
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
